@@ -1,0 +1,21 @@
+[package]
+name = "lzbitmap-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[workspace]
+
+[dependencies]
+libfuzzer-sys = "0.4"
+lzbitmap-rs = { path = ".." }
+
+[[bin]]
+name = "lzbitmap_decode"
+path = "fuzz_targets/lzbitmap_decode.rs"
+test = false
+doc = false
+bench = false

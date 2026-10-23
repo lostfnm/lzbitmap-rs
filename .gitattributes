@@ -1,0 +1,2 @@
+# CRLF checkouts would stop tests/vectors/alice.bin matching its .zbm.
+* text=auto eol=lf
